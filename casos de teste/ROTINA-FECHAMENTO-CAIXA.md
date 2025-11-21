@@ -23,7 +23,7 @@ ENTÃO o caixa deve ser finalizado corretamente.
 
 | **Vídeo**                                                      |
 | :------------------------------------------------------------ |
-| 
+|  [Video](https://drive.google.com/file/d/1r1jnXmuGFv8yZB3oqqeEJDQsd1mNOG6-/view?usp=drive_link)
 
 ---
 
@@ -48,7 +48,7 @@ ENTÃO o sistema deve permitir o fechamento do caixa.
 
 | **Vídeo**                                                      |
 | :------------------------------------------------------------ |
-| 
+| [Video](https://drive.google.com/file/d/19ZU38Dq5c5MmA-ryporugMA4kCFgFAlC/view?usp=drive_link)
 
 ---
 
@@ -75,7 +75,7 @@ ENTÃO o sistema deve exibir uma mensagem de erro e não permitir a retirada.
 
 | **Vídeo**                                                      |
 | :------------------------------------------------------------ |
-| 
+| [Video](https://drive.google.com/file/d/1dlRWMVg0sUTdAQVmKAdM15u7hy4mYJj0/view?usp=drive_link)
 
 ---
 
@@ -100,4 +100,4 @@ ENTÃO deve ser exibida uma mensagem de alerta sobre campos obrigatórios.
 
 | **Vídeo**                                                      |
 | :------------------------------------------------------------ |
-| 
+| [Video](https://drive.google.com/file/d/18mOT65QOK7wQJIWJ3JeBXm35Nh56AYe9/view?usp=drive_link)
