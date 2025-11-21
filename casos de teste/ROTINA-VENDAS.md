@@ -30,7 +30,7 @@ ENTÃO o sistema deve registrar corretamente os valores separados no Livro Caixa
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| |
+| [Video](https://drive.google.com/file/d/1crQDVs6hcyxm4sOz9qBGRqFtFUz78f9f/view?usp=drive_link)
 
 ### Caso de Teste 02: Produto sem estoque
 | ID       | Descrição                                                        |
@@ -54,7 +54,7 @@ Deve estar no Livro caixa
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| |
+| [Videos](https://drive.google.com/file/d/18l5vwQMqFEqkQlzINHVA32kdKcnLA_L2/view?usp=drive_link)
 
 ### Caso de Teste 03: Calcular valor total da venda com múltiplos itens
 | ID       | Descrição                                                        |
@@ -82,7 +82,7 @@ ENTÃO o valor final deve refletir a soma correta de todos os produtos e suas qu
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| |
+| [Video](https://drive.google.com/file/d/1sLNRrGBfC8hKxqbyhgCpbOFn0CQmHrD3/view?usp=drive_link)
 
 ### Caso de Teste 04: Finalizar venda sem selecionar tipo de documento
 | ID       | Descrição                                                        |
@@ -105,4 +105,4 @@ ENTÃO deve exibir erro.|
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| |
+| [Video](https://drive.google.com/file/d/17DxeeWmGmYK4h3ED7QwBqfGpvKPbRUfS/view?usp=drive_link)

@@ -1,117 +1,102 @@
 -------------------------------------------
-## ✅ CENÁRIO 02 – PROCESSAMENTO DE VENDA (PDV)
+## ✅ CENÁRIO 03 – COMPRA POR FORNECEDOR
 -------------------------------------------
 
-### Caso de Teste 01: Venda com múltiplas formas de pagamento
+### Caso de Teste 01: Compra concluída com sucesso
 | ID       | Descrição                                                        |
 | :------- | :---------------------------------------------------------------- |
-|C02-CT01	 | Sistema deve registrar venda paga com duas formas de pagamento distintas.|
+|C03-CT01	 | Compra lançada, estoque atualizado e caixa alimentado.|
 
 | **Pré-condições**                                             |
 | :------------------------------------------------------------ |
-|Cliente, funcionário e produtos cadastrados.|
-|Formas de pagamento múltiplas habilitadas no sistema.|
+|Fornecedor cadastrado.|
+|Produto cadastrado.|
 
 | **Passos**                                                        |
 | :------------------------------------------------------------ |
-DADO que o usuário clica em “Novo” na tela de vendas  
-E seleciona cliente, funcionário e data  
-E adiciona produtos à venda  
-QUANDO escolher duas formas de pagamento (ex.: dinheiro + cartão)  
-E finalizar a venda  
-ENTÃO o sistema deve registrar corretamente os valores separados no Livro Caixa.|
-
-| **Critérios de Aceitação**                                         |
-| :------------------------------------------------------------ |
-|Valores distribuídos corretamente entre as duas formas de pagamento.|
-|Registro completo no Livro Caixa.|
-|Comprovante exibindo as duas formas de pagamento.|
-|Venda salva sem inconsistências.|
-
-| **Video**                                         |
-| :------------------------------------------------------------ |
-| |
-
-### Caso de Teste 02: Produto sem estoque
-| ID       | Descrição                                                        |
-| :------- | :---------------------------------------------------------------- |
-|C02-CT02	 | Sistema deve permitir venda sem estoque.|
-
-| **Pré-condições**                                             |
-| :------------------------------------------------------------ |
-|Produto com quantidade = 0.|
-
-| **Passos**                                                        |
-| :------------------------------------------------------------ |
-DADO que o usuário tenta incluir o produto  
-QUANDO selecionar quantidade  
-O sistema deve permitir proceguir a venda.  
-Deve estar no Livro caixa
+DADO que o usuário cria nova compra  
+E adiciona produtos  
+QUANDO finalizar compra  
 
 | **Critérios de Aceitação**                                             |
 | :------------------------------------------------------------ |
-|Produto deve entrar na venda.|
+|Compra CONFIRMADA.|
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| |
+| [Video](https://drive.google.com/file/d/1tTY6JICkAnnjGptJj0qrVFTH8ioc88j4/view?usp=drive_link) |
 
-### Caso de Teste 03: Falha ao finalizar venda sem selecionar tipo de pagamento
+### Caso de Teste 02: Falha ao criar compra sem fornecedor
 | ID       | Descrição                                                        |
 | :------- | :---------------------------------------------------------------- |
-|C02-CT03	 | Sistema deve bloquear venda quando nenhum tipo de pagamento é selecionado.|
+|C03-CT02	 | Sistema deve impedir finalização de compra quando nenhum fornecedor é selecionado.|
 
 | **Pré-condições**                                             |
 | :------------------------------------------------------------ |
-|Venda pronta para finalizar.|
+|Nenhum fornecedor selecionado.|
+
+| **Passos**                                                        |
+| :------------------------------------------------------------ |
+DADO que o usuário tenta criar compra sem fornecedor  
+QUANDO clicar em “Salvar”  
+ENTÃO sistema deve bloquear a finalização e exibir alerta.|
+
+| **Critérios de Aceitação**                                             |
+| :------------------------------------------------------------ |
+|Compra não é registrada sem fornecedor.|
+|Mensagem de erro “Fornecedor obrigatório” exibida.|
+
+| **Video**                                         |
+| :------------------------------------------------------------ |
+| [Video](https://drive.google.com/file/d/1cvrccKjpleTntlZQ6qr2HmKD3ErY6Z6T/view?usp=drive_link)
+
+### Caso de Teste 03: Falha ao finalizar compra sem tipo de pagamento
+| ID       | Descrição                                                        |
+| :------- | :---------------------------------------------------------------- |
+|C03-CT03	 | Sistema deve impedir finalização de compra quando nenhum tipo de pagamento é selecionado.|
+
+| **Pré-condições**                                             |
+| :------------------------------------------------------------ |
+|Fornecedor e produtos cadastrados.|
 
 | **Passos**                                             |
 | :------------------------------------------------------------ |
-DADO que o usuário adicionou produtos à venda  
-E não seleciona nenhuma forma de pagamento  
-QUANDO tentar finalizar a venda  
-ENTÃO o sistema deve exibir alerta e impedir a conclusão.|
+DADO que o usuário adiciona produtos à compra  
+E não seleciona nenhum tipo de pagamento  
+QUANDO tentar finalizar a compra  
+ENTÃO o sistema deve exibir alerta e bloquear a finalização.|
 
 | **Critérios de Aceitação**                                             |
 | :------------------------------------------------------------ |
-|Venda não é registrada sem tipo de pagamento.|
+|Compra não é registrada sem tipo de pagamento.|
 |Mensagem de erro clara exibida ao usuário.|
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| |
+| [Video](https://drive.google.com/file/d/1b-ckZ0D6mZxCg-K7O4yq0RPdaAx0xiqQ/view?usp=drive_link)
 
-### Caso de Teste 04: Calcular valor total da venda com múltiplos itens
+### Caso de Teste 04: Compra à vista concluída com sucesso
 | ID       | Descrição                                                        |
 | :------- | :---------------------------------------------------------------- |
-|C02-CT04	 | Sistema deve calcular corretamente o valor total considerando produtos e quantidades diferentes.|
+|C03-CT04	 | Sistema registra compra à vista corretamente e alimenta o caixa.|
 
 | **Pré-condições**                                             |
 | :------------------------------------------------------------ |
-|Produtos cadastrados com preço definido.|
-|Venda em andamento com pelo menos dois itens.|
+|Fornecedor e produtos cadastrados.|
 
 | **Passos**                                             |
 | :------------------------------------------------------------ |
-DADO que o usuário adiciona múltiplos produtos à venda  
-E informa quantidades diferentes para cada item  
-QUANDO o sistema recalcular o total  
-ENTÃO o valor final deve refletir a soma correta de todos os produtos e suas quantidades.|
+DADO que o usuário adiciona produtos à compra  
+E seleciona a opção “À Vista”  
+QUANDO finalizar a compra  
+ENTÃO o sistema deve registrar a compra e alimentar o caixa imediatamente.|
 
 | **Critérios de Aceitação**                                             |
 | :------------------------------------------------------------ |
-|Total calculado corretamente.|
-|Atualização automática do valor final ao alterar quantidade.|
-|Resumo da venda exibindo valores por item e total geral.|
-|Nenhuma diferença entre o valor exibido e o valor registrado no caixa.|
+|Compra registrada corretamente como “À Vista”.|
+|Caixa é atualizado automaticamente.|
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| |
+| [Video](https://drive.google.com/file/d/1osp35oawOYUnq2NJGjxBN8I9RdamNXn_/view?usp=drive_link)
 
--------------------------------------------
-## ✅ CENÁRIO 04 – GESTÃO DE CLIENTES
--------------------------------------------
-
-### Caso de Teste 01: Cadastro de cliente PF com sucesso
-| ID       | Descrição
