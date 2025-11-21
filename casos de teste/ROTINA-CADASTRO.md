@@ -24,7 +24,7 @@ ENTÃO o cliente deve ser listado entre os registros.|
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| |[Video](https://drive.google.com/file/d/1Q2j8fdtXZ6r_AWgqHsdjwyGDEf0k65e-/view?usp=drive_link)
+| [Video](https://drive.google.com/file/d/1Q2j8fdtXZ6r_AWgqHsdjwyGDEf0k65e-/view?usp=drive_link)
 
 ### Caso de Teste 02: Cadastro com campos não obrigatórios vazios
 | ID       | Descrição                                                        |
@@ -48,7 +48,7 @@ ENTÃO o sistema deve permitir o cadastro sem apresentar erros.
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| |[Video](https://drive.google.com/file/d/1icMVRiIzKfie7KuR11Dqq1Un2YtUXSA4/view?usp=sharing)
+| [Video](https://drive.google.com/file/d/1icMVRiIzKfie7KuR11Dqq1Un2YtUXSA4/view?usp=sharing)
 
 ### Caso de Teste 03: Limite de crédito controlado dinamicamente
 | ID       | Descrição                                                        |
@@ -72,7 +72,7 @@ ENTÃO o sistema exibe alerta e abre fluxo de contas a receber.|
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| |[Video](https://drive.google.com/file/d/1KuMIi5xOrfwAm5165Fg_OuQuM41tco_P/view?usp=drive_link)
+| [Video](https://drive.google.com/file/d/1KuMIi5xOrfwAm5165Fg_OuQuM41tco_P/view?usp=drive_link)
 
 ### Caso de Teste 04: Cadastrar dependente corretamente
 | ID       | Descrição                                                        |
@@ -96,4 +96,4 @@ ENTÃO o registro do dependente deve ser vinculado corretamente ao cliente princ
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| |[Video](https://drive.google.com/file/d/1c8UVOmQblrpP6btptoI_x0aCzdWr2C4Q/view?usp=drive_link)
+| [Video](https://drive.google.com/file/d/1c8UVOmQblrpP6btptoI_x0aCzdWr2C4Q/view?usp=drive_link)
