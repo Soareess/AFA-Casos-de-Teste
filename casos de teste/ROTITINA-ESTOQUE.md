@@ -24,8 +24,11 @@ ENTÃO o estoque deve ser atualizado e a compra exibida como **CONFIRMADA**.
 | :------------------------------------------------------------ |
 | Compra confirmada.                                               |
 | Produtos lançados corretamente no estoque.                     |
+| **Vídeo**                                                      |
+| :------------------------------------------------------------ |
+|[Video](https://drive.google.com/file/d/1TSYa0T1xm04MjW6nLMgT1f64l45Fy5x4/view?usp=drive_link)
+|[Video](https://drive.google.com/file/d/1cKWzb71qUj69GDhc7RUPnJkm0AXoCk5B/view?usp=drive_link)
 
----
 
 ### Caso de Teste 02: Importação de XML inválido
 | ID       | Descrição                                                        |
@@ -47,8 +50,10 @@ ENTÃO deve ser exibida uma mensagem de erro, bloqueando a ação.
 | :------------------------------------------------------------ |
 | Mensagem clara de erro apresentada.                             |
 | Não é permitido gerar compra a partir do XML inválido.         |
+| **Vídeo**                                                      |
+| :------------------------------------------------------------ |
+|[Video](https://drive.google.com/file/d/13s_GplCUONXv9g08sVEXh-_kv_96PBzM/view?usp=drive_link)
 
----
 
 ### Caso de Teste 03: Importação com campos obrigatórios preenchidos
 | ID       | Descrição                                                        |
@@ -73,7 +78,7 @@ ENTÃO a importação deve ser realizada com sucesso.
 
 | **Vídeo**                                                      |
 | :------------------------------------------------------------ |
-| 
+| [Video](https://drive.google.com/file/d/1ILPGg9tRvf3ivtWt1ylchJKs5OGocl5E/view?usp=drive_link)
 
 ### Caso de Teste 04: Gerar compra sem informar tipo de documento
 | ID       | Descrição                                                        |
@@ -98,4 +103,4 @@ ENTÃO deve ser exibida uma mensagem de erro e a compra não pode ser confirmada
 
 | **Vídeo**                                                      |
 | :------------------------------------------------------------ |
-|
+|[Video](https://drive.google.com/file/d/13gpaZLDdDZ2cmriAJna8DTUvEUbT56cU/view?usp=drive_link)
