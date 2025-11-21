@@ -26,29 +26,29 @@ ENTÃO o cliente deve ser listado entre os registros.|
 | :------------------------------------------------------------ |
 | |
 
-### Caso de Teste 02: Validação automática de CPF e CEP
+### Caso de Teste 02: Cadastro com campos não obrigatórios vazios
 | ID       | Descrição                                                        |
 | :------- | :---------------------------------------------------------------- |
-|C04-CT02	 | Sistema deve validar CPF e CEP antes de salvar cadastro.|
+| C04-CT02 | Sistema deve permitir salvar cadastro mesmo quando CEP, Rua, Bairro, UF/Estado e Cidade não forem preenchidos. |
 
 | **Pré-condições**                                             |
 | :------------------------------------------------------------ |
-|Nenhuma.|
+| Nenhuma.                                                      |
 
-| **Passos**                                                        |
+| **Passos**                                                    |
 | :------------------------------------------------------------ |
-DADO que o usuário preenche CPF ou CEP inválido  
-QUANDO tentar salvar  
-ENTÃO o sistema deve exibir mensagem de erro e bloquear cadastro.|
+DADO que o usuário deixa em branco os campos **CEP, Rua, Bairro, UF/Estado e Cidade**  
+QUANDO tentar salvar o cadastro  
+ENTÃO o sistema deve permitir o cadastro sem apresentar erros.  
 
-| **Critérios de Aceitação**                                             |
+| **Critérios de Aceitação**                                      |
 | :------------------------------------------------------------ |
-|Cadastro não é salvo com CPF ou CEP inválido.|
-|Mensagem de erro clara exibida para o usuário.|
+| Cadastro é salvo corretamente.                                 |
+| Nenhuma mensagem de erro é exibida relacionada a esses campos. |
 
-| **Video**                                         |
+| **Vídeo**                                                      |
 | :------------------------------------------------------------ |
-| |
+
 
 ### Caso de Teste 03: Limite de crédito controlado dinamicamente
 | ID       | Descrição                                                        |
@@ -62,7 +62,6 @@ ENTÃO o sistema deve exibir mensagem de erro e bloquear cadastro.|
 | **Passos**                                             |
 | :------------------------------------------------------------ |
 DADO que o cliente tem limite de R$100  
-E administrador alterou o limite para R$150  
 QUANDO a venda ultrapassar R$150  
 ENTÃO o sistema exibe alerta e abre fluxo de contas a receber.|
 
