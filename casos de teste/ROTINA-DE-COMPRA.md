@@ -24,7 +24,7 @@ QUANDO finalizar compra
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| [Video] |https://drive.google.com/file/d/1tTY6JICkAnnjGptJj0qrVFTH8ioc88j4/view?usp=drive_link |
+| [Video] |https://drive.google.com/file/d/1tTY6JICkAnnjGptJj0qrVFTH8ioc88j4/view?usp=drive_link | |
 
 ### Caso de Teste 02: Falha ao criar compra sem fornecedor
 | ID       | Descrição                                                        |
