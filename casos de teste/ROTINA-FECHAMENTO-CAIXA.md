@@ -1,0 +1,102 @@
+-------------------------------------------
+## ✅ CENÁRIO 05 – FECHAMENTO DE CAIXA
+-------------------------------------------
+
+### Caso de Teste 01: Fechar caixa com sucesso
+| ID       | Descrição                                                        |
+| -------- | ---------------------------------------------------------------- |
+| C05-CT01 | Caixa do dia fechado e registrado.                                |
+
+| **Pré-condições**                                             |
+| :------------------------------------------------------------ |
+| Haver pelo menos uma venda registrada no dia.                 |
+
+| **Passos**                                                    |
+| :------------------------------------------------------------ |
+DADO que o usuário abre o **Livro Caixa**  
+QUANDO clicar em **Fechar Caixa**  
+ENTÃO o caixa deve ser finalizado corretamente.  
+
+| **Critérios de Aceitação**                                      |
+| :------------------------------------------------------------ |
+| O dia fica bloqueado para novas movimentações.                 |
+
+| **Vídeo**                                                      |
+| :------------------------------------------------------------ |
+| 
+
+---
+
+### Caso de Teste 02: Tentar fechar caixa sem vendas no dia
+| ID       | Descrição                                                        |
+| -------- | ---------------------------------------------------------------- |
+| C05-CT02 | Sistema deve permitir fechamento mesmo sem vendas registradas.   |
+
+| **Pré-condições**                                             |
+| :------------------------------------------------------------ |
+| Nenhuma venda registrada no dia.                               |
+
+| **Passos**                                                    |
+| :------------------------------------------------------------ |
+DADO que o usuário tenta fechar o caixa  
+QUANDO clicar em **Fechar**  
+ENTÃO o sistema deve permitir o fechamento do caixa.  
+
+| **Critérios de Aceitação**                                      |
+| :------------------------------------------------------------ |
+| O fechamento é permitido mesmo sem movimentações.             |
+
+| **Vídeo**                                                      |
+| :------------------------------------------------------------ |
+| 
+
+---
+
+### Caso de Teste 03: Retirada de valores com sucesso
+| ID       | Descrição                                                        |
+| -------- | ---------------------------------------------------------------- |
+| C05-CT03 | Retirada registrada e visível no livro caixa.                   |
+
+| **Pré-condições**                                             |
+| :------------------------------------------------------------ |
+| Caixa do dia aberto.                                          |
+
+| **Passos**                                                    |
+| :------------------------------------------------------------ |
+DADO que o usuário acessa **Retirar Valores**  
+E clica em **Novo**  
+QUANDO preencher **Valor** e **Histórico**  
+ENTÃO a retirada deve ser registrada e exibida corretamente.  
+
+| **Critérios de Aceitação**                                      |
+| :------------------------------------------------------------ |
+| Entrada listada corretamente no livro caixa.                  |
+
+| **Vídeo**                                                      |
+| :------------------------------------------------------------ |
+| 
+
+---
+
+### Caso de Teste 04: Retirada sem preencher campos obrigatórios
+| ID       | Descrição                                                        |
+| -------- | ---------------------------------------------------------------- |
+| C05-CT04 | Sistema deve bloquear retirada quando campos obrigatórios não forem preenchidos. |
+
+| **Pré-condições**                                             |
+| :------------------------------------------------------------ |
+| Nenhuma.                                                      |
+
+| **Passos**                                                    |
+| :------------------------------------------------------------ |
+DADO que o usuário deixa o **Histórico** em branco  
+QUANDO tentar salvar a retirada  
+ENTÃO deve ser exibida uma mensagem de alerta sobre campos obrigatórios.  
+
+| **Critérios de Aceitação**                                      |
+| :------------------------------------------------------------ |
+| Retirada não é registrada no sistema.                         |
+
+| **Vídeo**                                                      |
+| :------------------------------------------------------------ |
+| 
