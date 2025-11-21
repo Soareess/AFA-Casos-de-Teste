@@ -75,10 +75,10 @@ ENTÃO o sistema deve exibir alerta e bloquear a finalização.|
 | :------------------------------------------------------------ |
 | |
 
-### Caso de Teste 04: Compra parcial concluída com sucesso
+### Caso de Teste 04: Compra à vista concluída com sucesso
 | ID       | Descrição                                                        |
 | :------- | :---------------------------------------------------------------- |
-|C03-CT04	 | Sistema registra compra parcial e atualiza estoque apenas para itens recebidos.|
+|C03-CT04	 | Sistema registra compra à vista corretamente e alimenta o caixa.|
 
 | **Pré-condições**                                             |
 | :------------------------------------------------------------ |
@@ -87,15 +87,16 @@ ENTÃO o sistema deve exibir alerta e bloquear a finalização.|
 | **Passos**                                             |
 | :------------------------------------------------------------ |
 DADO que o usuário adiciona produtos à compra  
-E nem todos os itens estão disponíveis para entrega imediata  
+E seleciona a opção “À Vista”  
 QUANDO finalizar a compra  
-ENTÃO sistema registra apenas os itens recebidos e atualiza estoque parcial.|
+ENTÃO o sistema deve registrar a compra e alimentar o caixa imediatamente.|
 
 | **Critérios de Aceitação**                                             |
 | :------------------------------------------------------------ |
-|Estoque atualizado apenas para itens recebidos.|
-|Compra parcial registrada corretamente.|
+|Compra registrada corretamente como “À Vista”.|
+|Caixa é atualizado automaticamente.|
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
 | |
+
