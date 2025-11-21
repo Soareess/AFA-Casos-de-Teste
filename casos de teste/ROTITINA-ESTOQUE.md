@@ -50,44 +50,52 @@ ENTÃO deve ser exibida uma mensagem de erro, bloqueando a ação.
 
 ---
 
-### Caso de Teste 03: Falta de preenchimento obrigatório
+### Caso de Teste 03: Importação com campos obrigatórios preenchidos
 | ID       | Descrição                                                        |
 | -------- | ---------------------------------------------------------------- |
-| C01-CT03 | Sistema bloqueia importação quando CFOP ou Grupo não são preenchidos. |
+| C01-CT03 | Sistema permite importação de XML quando CFOP e Grupo são preenchidos. |
 
 | **Pré-condições**                                             |
 | :------------------------------------------------------------ |
-| - Nenhuma.                                                     |
+| Nenhuma.                                                      |
 
 | **Passos**                                                    |
 | :------------------------------------------------------------ |
 DADO que o usuário está na tela de importação  
-E deixa CFOP ou Grupo em branco  
+E preenche CFOP e Grupo corretamente  
 QUANDO tentar importar o XML  
-ENTÃO devem ser exibidas mensagens indicando os campos obrigatórios.  
+ENTÃO a importação deve ser realizada com sucesso.  
 
-| **Critérios de aceitação**                                      |
+| **Critérios de Aceitação**                                      |
 | :------------------------------------------------------------ |
-| Validação de campos obrigatórios realizada corretamente.       |
+| XML é importado corretamente.                                  |
+| Campos obrigatórios validados e aceitos pelo sistema.          |
 
----
+| **Vídeo**                                                      |
+| :------------------------------------------------------------ |
+| 
 
-### Caso de Teste 04: Gerar compra sem confirmar entrada
+### Caso de Teste 04: Gerar compra sem informar tipo de documento
 | ID       | Descrição                                                        |
 | -------- | ---------------------------------------------------------------- |
-| C01-CT04 | Compra permanece pendente sem confirmação de entrada.            |
+| C01-CT04 | Compra permanece pendente quando o tipo de documento não é informado. |
 
 | **Pré-condições**                                             |
 | :------------------------------------------------------------ |
-| - XML válido já importado.                                     |
+| XML válido já importado.                                       |
 
 | **Passos**                                                    |
 | :------------------------------------------------------------ |
-DADO que o usuário gera a compra  
-QUANDO sair da tela sem alterar o status para **CONFIRMADA**  
-ENTÃO a compra deve permanecer com status **PENDENTE**  
-E o estoque não deve ser alterado.  
+DADO que o usuário gera a compra e clica em **Finalizar**  
+QUANDO for direcionado para a tela **Confirmar Compra**  
+E não informar o **Tipo de Documento**  
+ENTÃO deve ser exibida uma mensagem de erro e a compra não pode ser confirmada.  
 
-| **Critérios de aceitação**                                      |
+| **Critérios de Aceitação**                                      |
 | :------------------------------------------------------------ |
+| Sistema impede a confirmação da compra sem o tipo de documento.|
 | Estoque permanece inalterado.                                   |
+
+| **Vídeo**                                                      |
+| :------------------------------------------------------------ |
+|
