@@ -24,7 +24,7 @@ QUANDO finalizar compra
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| [Video] (https://drive.google.com/file/d/1tTY6JICkAnnjGptJj0qrVFTH8ioc88j4/view?usp=drive_link) |
+| [Video](https://drive.google.com/file/d/1tTY6JICkAnnjGptJj0qrVFTH8ioc88j4/view?usp=drive_link) |
 
 ### Caso de Teste 02: Falha ao criar compra sem fornecedor
 | ID       | Descrição                                                        |
@@ -48,7 +48,7 @@ ENTÃO sistema deve bloquear a finalização e exibir alerta.|
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| [Video] (https://drive.google.com/file/d/1cvrccKjpleTntlZQ6qr2HmKD3ErY6Z6T/view?usp=drive_link)
+| [Video](https://drive.google.com/file/d/1cvrccKjpleTntlZQ6qr2HmKD3ErY6Z6T/view?usp=drive_link)
 
 ### Caso de Teste 03: Falha ao finalizar compra sem tipo de pagamento
 | ID       | Descrição                                                        |
@@ -73,7 +73,7 @@ ENTÃO o sistema deve exibir alerta e bloquear a finalização.|
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| [Video] (https://drive.google.com/file/d/1b-ckZ0D6mZxCg-K7O4yq0RPdaAx0xiqQ/view?usp=drive_link)
+| [Video](https://drive.google.com/file/d/1b-ckZ0D6mZxCg-K7O4yq0RPdaAx0xiqQ/view?usp=drive_link)
 
 ### Caso de Teste 04: Compra à vista concluída com sucesso
 | ID       | Descrição                                                        |
@@ -98,5 +98,5 @@ ENTÃO o sistema deve registrar a compra e alimentar o caixa imediatamente.|
 
 | **Video**                                         |
 | :------------------------------------------------------------ |
-| [Video] (https://drive.google.com/file/d/1osp35oawOYUnq2NJGjxBN8I9RdamNXn_/view?usp=drive_link)
+| [Video](https://drive.google.com/file/d/1osp35oawOYUnq2NJGjxBN8I9RdamNXn_/view?usp=drive_link)
 
