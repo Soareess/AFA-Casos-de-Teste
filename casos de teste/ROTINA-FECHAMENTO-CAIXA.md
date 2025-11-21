@@ -52,25 +52,26 @@ ENTÃO o sistema deve permitir o fechamento do caixa.
 
 ---
 
-### Caso de Teste 03: Retirada de valores com sucesso
+### Caso de Teste 03: Retirada de valores maior que o disponível
 | ID       | Descrição                                                        |
 | -------- | ---------------------------------------------------------------- |
-| C05-CT03 | Retirada registrada e visível no livro caixa.                   |
+| C05-CT03 | Retirada de valor maior que o disponível no caixa deve retornar erro. |
 
 | **Pré-condições**                                             |
 | :------------------------------------------------------------ |
-| Caixa do dia aberto.                                          |
+| Caixa do dia aberto com saldo disponível.                     |
 
 | **Passos**                                                    |
 | :------------------------------------------------------------ |
 DADO que o usuário acessa **Retirar Valores**  
 E clica em **Novo**  
-QUANDO preencher **Valor** e **Histórico**  
-ENTÃO a retirada deve ser registrada e exibida corretamente.  
+QUANDO preencher **Valor** maior que o saldo disponível  
+ENTÃO o sistema deve exibir uma mensagem de erro e não permitir a retirada.  
 
 | **Critérios de Aceitação**                                      |
 | :------------------------------------------------------------ |
-| Entrada listada corretamente no livro caixa.                  |
+| Retirada não registrada.                                        |
+| Mensagem clara de erro exibida.                                 |
 
 | **Vídeo**                                                      |
 | :------------------------------------------------------------ |
